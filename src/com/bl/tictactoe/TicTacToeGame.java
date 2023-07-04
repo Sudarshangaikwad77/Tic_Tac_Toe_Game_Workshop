@@ -17,4 +17,13 @@ public class TicTacToeGame
         System.out.println("----------");
         System.out.println(board[7] + " | " + board[8] + " | " +board[9] );
     }
+    public void showboard(){
+        System.out.println("valid cell to make movement");
+        for (int i =1 ; i < board.length; i++){
+            if(board[i] == ' '){
+                System.out.println(i +" ");
+            }
+        }
+        System.out.println();
+    }
 }

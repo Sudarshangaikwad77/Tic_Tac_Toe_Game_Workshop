@@ -6,5 +6,6 @@ public class TicTacToeMain
         System.out.println("welcome to TicTacToe Game...");
         TicTacToeGame game = new TicTacToeGame();
         game.displayboard();
+        game.showboard();
     }
 }
