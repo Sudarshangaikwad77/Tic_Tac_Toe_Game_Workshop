@@ -3,11 +3,15 @@ package com.bl.tictactoe;
 public class TicTacToeGame
 {
     char [] board;
-    public TicTacToeGame() {
+    char playerletter ;
+    char computerletter;
+    public TicTacToeGame(char playerletter) {
         board = new char[10];
         for (int i = 1; i < board.length; i++){
             board[i] = ' ';
         }
+        this.playerletter = playerletter;
+        this.computerletter = (playerletter == 'x') ? 'o' : 'x';
     }
     public void displayboard()
     {
